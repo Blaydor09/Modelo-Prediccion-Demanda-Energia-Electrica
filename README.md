@@ -6,7 +6,7 @@ Sistema de prediccion para estimar demanda electrica con horizonte minimo de 24 
 
 Antes de usar LSTM o Prophet conviene establecer una linea base fuerte y reproducible. Para este dataset:
 
-- Hay muchos anos de datos horarios, con estacionalidad diaria, semanal y anual clara.
+- Hay muchos años de datos horarios, con estacionalidad diaria, semanal y anual clara.
 - Solo hay una variable historica de demanda; no hay clima, feriados locales u otras variables externas.
 - LSTM requiere mas datos preparados, escalado, validacion cuidadosa y dependencias pesadas. Es util si luego agregamos variables externas o patrones no lineales complejos.
 - Prophet es una buena opcion para tendencia y estacionalidad, pero para prediccion operativa de 24 horas suele necesitar regresores/rezagos adicionales para competir con modelos autoregresivos.
